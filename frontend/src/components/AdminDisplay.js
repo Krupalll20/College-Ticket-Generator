@@ -63,7 +63,7 @@ const AdminDisplay = () => {
           ))}
         </ul>) : (<p>no data</p>)}
 
-        <NavLink><button className='add-faculty'>Add Faculty</button></NavLink><br /><br />
+        <NavLink to="/register"><button className='add-faculty'>Add Faculty</button></NavLink><br /><br />
 
         <NavLink><button className='a-logout' onClick={logout}>Logout</button></NavLink>
 
