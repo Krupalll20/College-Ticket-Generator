@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import "../styles/AddQuery.css"
 
 const AddQuery = () => {
 
@@ -27,7 +28,7 @@ const AddQuery = () => {
 
   if (role === "FACULTY") {
     return (
-      <div>
+      <div className='addqry-div'>
         <form method='post' id='query-form'>
 
           <label className='login-label' htmlFor="query">query : </label>

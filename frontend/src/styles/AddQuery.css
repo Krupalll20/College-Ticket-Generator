@@ -1,0 +1,46 @@
+.addqry-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#query-form {
+  background-color: #2c3e50;
+  padding: 50px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.query {
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.query:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
+.submit-qry {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submit-qry:hover {
+  background-color: #2980b9;
+}

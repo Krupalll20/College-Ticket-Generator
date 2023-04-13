@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import axios from "axios"
+import "../styles/UserDisplay.css"
 
 
 const UserDisplay = () => {
@@ -63,7 +64,7 @@ const UserDisplay = () => {
 
   if (role === "FACULTY") {
     return (
-      <div>
+      <div className='u-div-1'>
         {data.length > 0 ? (<ul>
           {data.map((query) => (<>
             <p className='query'>{query.query}</p>
@@ -71,7 +72,7 @@ const UserDisplay = () => {
             <button className='btn-remove' value={query._id} onClick={(e) => remove(e.target.value)}>Remove</button><br /><br />
           </>
           ))}
-        </ul>) : (<p>no data</p>)}
+        </ul>) : (<p></p>)}
 
         <NavLink to="/addQuery"><button className='addQuery'>Add New Query</button></NavLink><br /><br />
 
